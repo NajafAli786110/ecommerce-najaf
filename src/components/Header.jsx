@@ -5,6 +5,7 @@ import "../App.css";
 import { GoGitCompare } from "react-icons/go";
 import { AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
+import { BiCategoryAlt } from "react-icons/bi";
 
 const Header = () => {
   return (
@@ -98,32 +99,33 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="menu-bottom d-flex align-items-center">
+              <div className="menu-bottom d-flex align-items-center gap-30">
                 <div>
                   <div className="dropdown">
+                    <BiCategoryAlt className="text-white compare-image me-2" />
                     <button
-                      className="btn btn-secondary dropdown-toggle"
+                      className="btn btn-secondary dropdown-toggle bg-transparent border-0 p-0"
                       type="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Dropdown button
+                      <span className="pe-3">Shop Categories</span>
                     </button>
-                    <ul className="dropdown-menu">
+                    <ul className="dropdown-menu p-0">
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item text-white" to="/">
                           Action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item text-white" to="/">
                           Another action
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item text-white mb-0" to="/">
                           Something else here
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
