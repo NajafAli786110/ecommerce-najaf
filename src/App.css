@@ -117,3 +117,11 @@ footer{
 footer:not(:first-child){
   border-top: 1px solid var(--color-828599);
 }
+.input-group input:focus{
+  border: 3px solid #DEE2E6;
+}
+footer .input-group-text{
+  color: white;
+  background-color: var(--color-212529);
+  border: 6px solid #fff !important;
+}
